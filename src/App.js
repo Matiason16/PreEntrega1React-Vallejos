@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Menu from './Menu'; // Asegúrate de que el nombre coincida con el nombre del archivo
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Menu />
+      <div id="home">
+        <h1>Bienvenido a mi sitio web</h1>
+        <p>Esta es la sección de inicio.</p>
+      </div>
+      <div id="about">
+        <h1>Acerca de</h1>
+        <p>Información sobre nosotros.</p>
+      </div>
+      <div id="services">
+        <h1>Servicios</h1>
+        <p>Descripción de los servicios que ofrecemos.</p>
+      </div>
+      <div id="contact">
+        <h1>Contacto</h1>
+        <p>Cómo contactarnos.</p>
+      </div>
     </div>
   );
 }
